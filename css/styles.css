@@ -373,7 +373,7 @@ border-radius: 4px;
 justify-content: center;
 align-items: center;
 color: var(--border-grey-color) ;
-transition: border-color 2500ms linear, color 2500ms linear;}
+transition: border-color var(--transition), color var(--transition);}
 
 .customers-icon {fill: currentColor;}
 
