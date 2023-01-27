@@ -474,7 +474,7 @@ border-color: #404BBF;}
     background-color: #FCFCFC;
     border-radius: 4px;
     padding: 24px;
-position: transform var(--transition);}
+transition: transform var(--transition);}
 
 .is-hidden {
     opacity: 0;
