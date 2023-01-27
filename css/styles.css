@@ -90,20 +90,22 @@ transition: color var(--transition);}
     line-height: var(--typical-line-height);
     letter-spacing: var(--typical-letter-spacing);
     color: var(--second-text-color);
-transition: color var(--transition);}
+transition: color var(--transition);
+}
 
 .header-link:hover,
 .header-link:focus,
 .header-link:active { color: var(--accent-color);}
 
 .current {color: var(--accent-color);
-position: relative;}
+    position: relative;
+}
 
 .current::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     display: block;
     width: 100%;
     height: 4px;
@@ -370,16 +372,14 @@ display: flex;
 border-radius: 4px;
 justify-content: center;
 align-items: center;
-transition: border-color var(--transition), fill var(--transition);
-}
+color: var(--border-grey-color) ;
+transition: border-color 2500ms linear, color 2500ms linear;}
 
-.customers-icon {fill:  var(--logo-grey-color)}
+.customers-icon {fill: currentColor;}
 
-.customers-link:is(:hover, :focus) {border-color: var(--hover-bgc);}
 
-.customers-link:is(:hover, :focus) .customers-icon {
-    fill: var(--hover-bgc);
-}
+.customers-link:is(:hover, :focus) {border-color: var(--hover-bgc);
+color: var(--hover-bgc);}
 
 /* Футер */
 
